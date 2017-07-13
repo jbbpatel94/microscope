@@ -3,8 +3,7 @@
 		<div class="post-content">
 			<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
 		</div>
-		<div class="postPage">
-		<a href="{{pathFor ''}}">Discuss</a>
-		</div>
+		<a href="{{pathFor route='postPage'}}" class="discuss btn btn-default">Discuss</a>
+		<!--a href="/posts/{{_id}}" class="discuss btn btn-default">Discuss</a-->
 	</div>
 </template>
