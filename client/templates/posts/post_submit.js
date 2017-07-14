@@ -5,7 +5,7 @@ Template.postSubmit.events({
 			url: $(e.target).find('[name=url]').val(),
 			title: $(e.target).find('[name=title]').val()
 		};
-		Posts.insert(post);
+		post._id = Posts.insert(post);
 		//console.log(post._id);
 		Router.go('postPage', post);
 	}
