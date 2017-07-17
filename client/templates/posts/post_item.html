@@ -2,8 +2,13 @@
 	<div class="post">
 		<div class="post-content">
 			<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+			<p>
+				submitted by {{author}}
+				{{#if ownPost}}
+				<a href="{{pathFor 'postEdit'}}">Edit</a>
+				{{/if}}
+			</p>
 		</div>
-		<a href="{{pathFor route='postPage'}}" class="discuss btn btn-default">Discuss</a>
-		<!--a href="/posts/{{_id}}" class="discuss btn btn-default">Discuss</a-->
+		<a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Discuss</a>
 	</div>
 </template>
