@@ -1,5 +1,10 @@
 <template name="postPage">
 	<div class="post-page page">
-		{{>postItem}}
+		{{> postItem}}
+		<ul class="comments">
+			{{#each comments}}
+			{{> commentItem}}
+			{{/each}}
+		</ul>
 	</div>
 </template>
